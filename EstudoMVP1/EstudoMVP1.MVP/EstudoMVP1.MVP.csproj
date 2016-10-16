@@ -40,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IClienteCadastroPassive.cs" />
+    <Compile Include="Interfaces\IClienteCadastroSupervising.cs" />
+    <Compile Include="Presenters\UsuarioCadastroPresenterPassiveView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\EstudoMVP1.Model\EstudoMVP1.Model.csproj">
+      <Project>{B4154A18-3D9A-4445-A0C3-514C503722E7}</Project>
+      <Name>EstudoMVP1.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
