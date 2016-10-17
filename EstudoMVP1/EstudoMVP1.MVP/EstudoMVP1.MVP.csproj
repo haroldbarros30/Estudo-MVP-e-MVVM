@@ -43,6 +43,7 @@
     <Compile Include="Interfaces\IClienteCadastroPassive.cs" />
     <Compile Include="Interfaces\IClienteCadastroSupervising.cs" />
     <Compile Include="Presenters\UsuarioCadastroPresenterPassiveView.cs" />
+    <Compile Include="Presenters\UsuarioCadastroPresenterSupervising.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

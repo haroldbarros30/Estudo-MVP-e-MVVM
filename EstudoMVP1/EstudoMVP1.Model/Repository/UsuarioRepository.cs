@@ -28,7 +28,7 @@ namespace EstudoMVP1.Model.Repository
 
         public static void Deletar(long IdUsuario)
         {
-            int idxUsuarioLocalizado = usuariosCadastrados.FindIndex(x => 01 x.Id.Equals(IdUsuario));
+            int idxUsuarioLocalizado = usuariosCadastrados.FindIndex(x => x.Id.Equals(IdUsuario));
 
             usuariosCadastrados.RemoveAt(idxUsuarioLocalizado);
         }
