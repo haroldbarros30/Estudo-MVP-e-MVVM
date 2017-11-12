@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:EstudoMVP2" 
+    x:Class="EstudoMVP2.EstudoMVP2Page">
+
+    <ScrollView>
+        <ScrollView>
+            <StackLayout Margin="0,20,0,0">
+
+                <Entry x:Name="txtNome" Placeholder="Nome"/>
+                <Entry x:Name="txtLogin" Placeholder="Login"/>
+                <Entry x:Name="txtSenha" Placeholder="Senha"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="btnSalvar" Text="Salvar" Clicked="btnSalvar_Click"/> 
+                    <Button x:Name="btnAtualizar" Text="Atualizar"  Clicked="btnAtualizar_Click"/> 
+                    <Button x:Name="btnDeletar" Text="Deletar"  Clicked="btnDeletar_Click"/> 
+                    <Button x:Name="btnCancelar" Text="Cancelar"    Clicked="btnCancelar_Click"/> 
+                </StackLayout>
+
+                <ListView x:Name="listview" ItemTapped="Handle_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell
+                                Text="{Binding Nome}"
+                                Detail="{Binding Login}">
+                            </TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ScrollView>
+</ContentPage>
