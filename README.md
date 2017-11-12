@@ -4,5 +4,5 @@ Este projeto tem por objetivo realizar um estudo sobre o MVP-Model View Presente
 
 Indice dos estudos realizados:
 - EstudoMVP1 - Visual Studio 2015 - Windows Forms Desktop e WebForms
-- EstudoMVP2 - Visual Studio 2008 - Windows Forms Desktop e Compact Framework WinCE
+- EstudoMVP2 - Visual Studio 2008 - Windows Forms Desktop, Compact Framework WinCE e Xamarin Forms
 
